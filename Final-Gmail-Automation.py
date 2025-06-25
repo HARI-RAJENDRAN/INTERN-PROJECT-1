@@ -62,6 +62,7 @@ for reg_no, student in enrollment_dict.items():
         # ── Context for Word Template ─────────────────────────────
         context = {
             "date": send_date,
+            "n_date":next_date,
             "name": student["Name"],
             "reg_no": student["Reg No"],
             "major": student["Major"],
